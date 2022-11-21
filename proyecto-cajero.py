@@ -20,8 +20,8 @@ def cajero():
             print("     #4  transferir dinero")
             print("     #5  comprar dolares")
             print("     #6  vender dolares")
-            print("     #7  crear plazo fijo")
-            print("     #8  ver ultimos movimientos")
+            print("     #7  crear plazo fijo en dolares")
+            print("     #8  crear plazo fijo en pesos")
             print("     #9  salir de la cuenta")
             print("#########################################")
             opcion = int(input("ingresa tu opcion: "))
@@ -157,7 +157,7 @@ def cajero():
                             print("####################################################")       
                         elif confirma == "no":
                 
-                            print("has cancelado tu venta en dolares")  
+                            print("has cancelado tu plazo fijo en dolares")  
                         else :
                             print("######################################")
                             print ("seleccion incorrecta por favor vuelve a ingresar una opcion correcta!!!!!!") 
@@ -167,6 +167,62 @@ def cajero():
                
             
             #8ver ultimos movimientos
+            elif opcion == 8:
+                def mifuncion():
+                    print("#####################################")
+                    print("    plazo fijo en pesos por 365 dias ofrece taza del 75%")
+                    print("    plazo fijo en pesos a 180 dias ofrece taza de 36.98%" )
+                    print("    plazo fijo en pesos a 120 dias ofrece taza de 18.4%")
+                    print("    plazo fijo en pesos a 60 dias ofrece taza de 12.33%")
+                    print("    plazo fijo en pesos a 30 dias ofrece taza de 6.174%")
+                    print("#####################################")
+                    print("    tu saldo en pesos es el siguiente:", saldo)
+                    print("#####################################")
+                    print("#####################################")
+                    plazoFijoPesos = float(input("ingresa el monto en pesos a plazo fijo que deseas colocar: "))
+                    dias_plazo_fijo_pesos= int(input("ingrese los dias que desea colocar su plazo fijo en pesos: "))
+                    print("#####################################")
+                    print("estas seguro de colocar en plazo fijo : $" , plazoFijoPesos, "a",dias_plazo_fijo_pesos,  "dias?")
+                    confirma  = str(input("ingresa \n     #si para confirmar. \n     #no para cancelar "))
+                    print("#####################################")
+                    if confirma == "si":
+                
+                 
+                        if dias_plazo_fijo_pesos == 30:
+                            plazo_pesos_30 =(plazoFijoPesos * 6.174)/100 + plazoFijoPesos
+                            print("####################################################")
+                            print("usted recibira en 30 dias un  total de: $" , plazo_pesos_30)
+                            print("####################################################")
+                        elif dias_plazo_fijo_pesos == 60:
+                            plazo_pesos_60 =(plazoFijoPesos *12.33 )/100 + plazoFijoPesos
+                            print("####################################################")
+                            print("usted recibira en 60 dias un  total de: $" , plazo_pesos_60)
+                            print("####################################################")
+                        elif dias_plazo_fijo_pesos == 120:
+                            plazo_pesos_120 =(plazoFijoPesos *18.4 )/100 + plazoFijoPesos
+                            print("####################################################")
+                            print("usted recibira en 120 dias un  total de: $" , plazo_pesos_120)
+                            print("####################################################")
+                        elif dias_plazo_fijo_pesos == 180:
+                            plazo_pesos_180 =(plazoFijoPesos * 36.98)/100 + plazoFijoPesos
+                            print("####################################################")
+                            print("usted recibira en 180 dias un  total de: $" , plazo_pesos_180)
+                            print("####################################################") 
+                        elif dias_plazo_fijo_pesos == 365:
+                            plazo_pesos_365 =(plazoFijoPesos * 75)/100 + plazoFijoPesos
+                            print("####################################################")
+                            print("usted recibira en 365 dias un  total de: $" , plazo_pesos_365)
+                            print("####################################################")       
+                        elif confirma == "no":
+                
+                            print("has cancelado tu plazo fijo en pesos")  
+                        else :
+                            print("######################################")
+                            print ("seleccion incorrecta por favor vuelve a ingresar una opcion correcta!!!!!!") 
+                            print("#######################################")
+                            mifuncion()
+                mifuncion()
+               
             #9salir de la cuenta
         else:
             print("clave incorrecta")
