@@ -30,17 +30,22 @@ def cajero():
                 opcion = int(input("ingresa tu opcion: "))
             #1consultar saldo
                 if  opcion == 1:
+                    print("#########################################")
                     print("tu saldo actual en pesos es de: $" ,saldo)
                     def menu_salida():
+                        print("#########################################")
                         print("""si desea vovlver al menu principal presione 0 
                         si desea salir presione 9""")
+                        print("#########################################")
                         opcion_menu = int(input("ingresa la opcion desada: "))
                         if opcion_menu==0:
                             menu_principal()
                         elif opcion_menu==9:
+                            print("#########################################")
                             print("""usted a salido con exito!!!
                             muchas gracias por usar nuestros servicios""")
                         else :
+                            print("#########################################")
                             print("ha ingresado una opcion invalida, por favor imgrese la opcion correcta") 
                             menu_salida() 
                     menu_salida()              
@@ -52,39 +57,51 @@ def cajero():
                     saldoActual = saldo + ingreso
                     print("--Gracias por ingresar su dinero, su saldo actual es de: $",saldoActual, "--")
                     def menu_salida():
+                        print("#########################################")
                         print("""si desea vovlver al menu principal presione 0 
                         si desea salir presione 9""")
+                        print("#########################################")
                         opcion_menu = int(input("ingresa la opcion desada: "))
                         if opcion_menu==0:
                             menu_principal()
                         elif opcion_menu==9:
+                            print("#########################################")
                             print("""usted a salido con exito!!!
                             muchas gracias por usar nuestros servicios""")
                         else :
+                            print("#########################################")
                             print("ha ingresado una opcion invalida, por favor imgrese la opcion correcta") 
                             menu_salida() 
                     menu_salida()              
             #3extraer dinero
                 elif opcion == 3:
+                    print("#########################################")
                     extraccion = int(input("ingresa el monto a extraer: "))
                     saldoActual = saldo - extraccion
+                    print("#########################################")
                     print("gracias por extraer, tu saldo restante es: $" , saldoActual)
                     def menu_salida():
+                        print("#########################################")
                         print("""si desea vovlver al menu principal presione 0 
                         si desea salir presione 9""")
+                        print("#########################################")
                         opcion_menu = int(input("ingresa la opcion desada: "))
                         if opcion_menu==0:
                             menu_principal()
                         elif opcion_menu==9:
+                            print("#########################################")
                             print("""usted a salido con exito!!!
                             muchas gracias por usar nuestros servicios""")
                         else :
+                            print("#########################################")
                             print("ha ingresado una opcion invalida, por favor imgrese la opcion correcta") 
                             menu_salida() 
                     menu_salida()              
             #4transferir dinero
                 elif opcion == 4:
+                    print("#########################################")
                     tranferir = int(input("ingrese el cbu de la cuenta a la cual deseas tranferir: "))
+                    print("#########################################")
                     monto = int(input("ingresa el monto a tranferir: "))
                     print("#########################################################")
                     print("Estas por realizar una transferencia al numero de cuenta ", tranferir , "con el siguiente monto: ", monto, "estas seguro que deseas realizar esta accion ?")
@@ -92,21 +109,28 @@ def cajero():
                     saldoActual = saldo - monto
                     confirmar = str(input("ingresa: \n     # si para confirmar la transferencia. \n     # no para cancelar: \n "))
                     if confirmar == "si":
+                        print("#########################################")
                         print("gracias tu tranferencia ha sido realizada!, tu saldo actual es de: $" , saldoActual )
                     elif confirmar == "no":
+                        print("#########################################")
                         print("has cancelado tu transferencia")
                     else:
+                        print("#########################################")
                         print("has ingresado un valor invalido")
                     def menu_salida():
+                        print("#########################################")
                         print("""si desea vovlver al menu principal presione 0 
                         si desea salir presione 9""")
+                        print("#########################################")
                         opcion_menu = int(input("ingresa la opcion desada: "))
                         if opcion_menu==0:
                             menu_principal()
                         elif opcion_menu==9:
+                            print("#########################################")
                             print("""usted a salido con exito!!!
                             muchas gracias por usar nuestros servicios""")
                         else :
+                            print("#########################################")
                             print("ha ingresado una opcion invalida, por favor imgrese la opcion correcta") 
                             menu_salida() 
                     menu_salida()                  
@@ -130,19 +154,25 @@ def cajero():
                         print("tu saldo en tu cuenta dolares es de: u$s" , saldoDolar )
                         print("#####################################################")
                     elif confirma == "no":
+                        print("#########################################")
                         print("has cancelado tu compra") 
                     else:
+                        print("#########################################")
                         print("has ingresado una opcion incorrecta")    
                     def menu_salida():
+                        print("#########################################")
                         print("""si desea vovlver al menu principal presione 0 
                         si desea salir presione 9""")
+                        print("#########################################")
                         opcion_menu = int(input("ingresa la opcion desada: "))
                         if opcion_menu==0:
                             menu_principal()
                         elif opcion_menu==9:
+                            print("#########################################")
                             print("""usted a salido con exito!!!
                             muchas gracias por usar nuestros servicios""")
                         else :
+                            print("#########################################")
                             print("ha ingresado una opcion invalida, por favor imgrese la opcion correcta") 
                             menu_salida() 
                     menu_salida()                          
@@ -174,18 +204,22 @@ def cajero():
                             print("tu saldo en tu cuenta dolares es de: u$s" , saldoDolar )
                             print("#####################################################")
                     elif confirma == "no":
-                
+                        print("#########################################")
                         print("has cancelado tu venta en dolares")
                     def menu_salida():
+                        print("#########################################")
                         print("""si desea vovlver al menu principal presione 0 
                         si desea salir presione 9""")
+                        print("#########################################")
                         opcion_menu = int(input("ingresa la opcion desada: "))
                         if opcion_menu==0:
                             menu_principal()
                         elif opcion_menu==9:
+                            print("#########################################")
                             print("""usted a salido con exito!!!
                             muchas gracias por usar nuestros servicios""")
                         else :
+                            print("#########################################")
                             print("ha ingresado una opcion invalida, por favor imgrese la opcion correcta") 
                             menu_salida() 
                     menu_salida()              
@@ -244,7 +278,7 @@ def cajero():
                                 print("#######################################")
                                 mifuncion()          
                         elif confirma == "no":
-                    
+                                print("#########################################")
                                 print("has cancelado tu plazo fijo en dolares")  
                         else :
                                 print("######################################")
@@ -253,15 +287,19 @@ def cajero():
                     
                     mifuncion()
                     def menu_salida():
+                        print("#########################################")
                         print("""si desea vovlver al menu principal presione 0 
                         si desea salir presione 9""")
+                        print("#########################################")
                         opcion_menu = int(input("ingresa la opcion desada: "))
                         if opcion_menu==0:
                             menu_principal()
                         elif opcion_menu==9:
+                            print("#########################################")
                             print("""usted a salido con exito!!!
                             muchas gracias por usar nuestros servicios""")
                         else :
+                            print("#########################################")
                             print("ha ingresado una opcion invalida, por favor imgrese la opcion correcta") 
                             menu_salida() 
                     menu_salida()                   
@@ -328,34 +366,50 @@ def cajero():
                                 mifuncion()
                     mifuncion()
                     def menu_salida():
+                        print("#########################################")
                         print("""si desea vovlver al menu principal presione 0 
                         si desea salir presione 9""")
+                        print("#########################################")
                         opcion_menu = int(input("ingresa la opcion desada: "))
                         if opcion_menu==0:
                             menu_principal()
                         elif opcion_menu==9:
+                            print("#########################################")
                             print("""usted a salido con exito!!!
                             muchas gracias por usar nuestros servicios""")
                         else :
+                            print("#########################################")
                             print("ha ingresado una opcion invalida, por favor imgrese la opcion correcta") 
                             menu_salida() 
                     menu_salida()           
-            menu_principal()   
-            #9salir de la cuenta
-            def menu_salida():
-                        print("""si desea vovlver al menu principal presione 0 
-                        si desea salir presione 9""")
-                        opcion_menu = int(input("ingresa la opcion desada: "))
-                        if opcion_menu==0:
-                            menu_principal()
-                        elif opcion_menu==9:
+               
+              #9salir de la cuenta
+                elif opcion == 9:
+                    def menu_retorno():
+                        print("""Esta seguro de salir?
+                        presione s para confirmar y n para retornar al menu principal""")
+                        print("#########################################")
+                        opcion_menu = str(input("ingresa la opcion desada: "))
+                        print("#########################################")
+                        if opcion_menu=="s":
+                            print("#########################################")
                             print("""usted a salido con exito!!!
                             muchas gracias por usar nuestros servicios""")
+                        elif opcion_menu=="n":
+                            menu_principal()
                         else :
-                            print("ha ingresado una opcion invalida, por favor imgrese la opcion correcta") 
-                            menu_salida() 
-            menu_salida()           
+                            print("#########################################")
+                            print("""Opcion incorrecta!!!!""")
+                            
+                            
+                            menu_retorno()
+                    menu_retorno()
+
+
+            menu_principal()        
+            
         else:
+            print("#########################################")
             print("clave incorrecta")
     elif idioma == 2:
         print("has seleccionado ingles")
